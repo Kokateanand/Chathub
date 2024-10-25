@@ -1,0 +1,447 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101116;
+    color: #ffffff;
+    padding: 20px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #e5e7eb;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(18, 18, 18, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00C9FF;
+    text-shadow: 0 0 5px #00C9FF;
+
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.menu li {
+    padding: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.menu li a:hover {
+    color: #00C9FF;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-btn {
+    background-color: #2563EB;
+    color: white;
+}
+
+.signup-btn {
+    background-color: white;
+    color: #333;
+    border: 1px solid #2563EB;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contact container */
+.contact-container {
+    
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 150px 20px;
+    display: flex; 
+    width: 100%;
+}
+
+
+.sidebar {
+    box-shadow: 10px 5px 5px #2563eb;
+    color: rgb(0, 0, 0);
+    width: 50%; 
+    padding: 20px;
+    background-color: #1F2937; 
+    border-radius: 30px;
+    margin-right: 50px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+.sidebar:hover{
+    box-shadow: 10px 5px 5px red;
+}
+
+.sidebar p{
+    font-size: 18px;
+    padding: 15px 0px;
+    color: #9ca3af;
+    text-align: center;
+}
+
+.sidebar h3 {
+    color: white;
+    font-size: 23px;
+    margin-top: 0; 
+    text-align: center; 
+}
+
+/* Form wrapper styles */
+.form-wrapper {
+    width: 70%; /* Adjust as needed for form width */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    justify-content: center; /* Center form content vertically */
+}
+
+/* Form styles */
+.contact-form .form-group {
+    margin-bottom: 15px;
+    /*text-align: center;  Center align text and elements in form groups */
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.phone-row {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.phone-number {
+    display: flex; /* Align country code and 
+    phone input side by side */
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.country{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Row styles */
+.name-row {
+    display: flex;
+    justify-content: center; /* Center content in the name row */
+    gap: 20px;
+}
+
+.name-row .form-group {
+    flex: 1;
+}
+
+/* Button styles */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.footer {
+    background-color: #111;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-brand {
+    text-align: left;
+}
+
+.footer-brand p {
+    color: #ffffff;
+    font-size: 1rem;
+    max-width: 300px;
+    padding: 5px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.footer-links a:hover {
+    color: #00C9FF;
+    text-decoration: underline;
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: #666;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.cursor {
+    z-index: 999;
+    position: fixed;
+    background: #2696E8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696E8,
+        0 0 60px #2696E8,
+        0 0 100px #2696E8;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before {
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    
+    .nav-content {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-content.show {
+        display: flex;
+    }
+
+    .nav-content.show {
+        display: flex;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a:hover {
+        color: #00C9FF;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .login-btn,
+    .signup-btn {
+        width: 80%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-links a {
+        padding: 10px 0;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-brand {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack sidebar and form on small screens */
+    }
+
+    .sidebar, .form-wrapper {
+        width: 100%; /* Full width for both on mobile */
+        margin-right: 0; /* Remove margin on mobile */
+        margin-bottom: 20px; /* Add space below sidebar */
+    }
+
+    .name-row {
+        flex-direction: column; /* Stack name fields on small screens */
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+}
