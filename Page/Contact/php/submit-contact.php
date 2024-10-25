@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $recaptchaSecret = '6Lff8msqAAAAAOPdSwHIYDYdBqJevH2RiwxdrMGi';
+    $recaptchaSecret = 'security key her';
     $recaptchaResponse = $_POST['g-recaptcha-response'];
     
     // Make a POST request to Google's reCAPTCHA server for validation
